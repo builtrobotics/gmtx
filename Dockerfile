@@ -18,6 +18,7 @@ RUN apk update && apk add --no-cache \
 
 RUN git clone https://gitlab.freedesktop.org/gstreamer/gstreamer.git \
     && cd gstreamer \
+    && git checkout 1.26.1 \
     && meson setup \
         # Needed in order to build the x264 plugin.
         -Dgpl=enabled \
