@@ -10,10 +10,9 @@ RUN apk update && apk add --no-cache \
     git \
     linux-headers \
     meson \
-    py3-setuptools \
-    python3 \
-    python3-dev \
     rtmpdump-dev \
+    libxml2 \
+    libxml2-dev \
     # Installing as a meson subproject of GStreamer is borked.
     x264-dev
 
